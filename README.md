@@ -1,6 +1,6 @@
 # Generate-random-text-with-Express-and-Node
 
-SIMPLE NODE PROGRAM THAT GENERATES RANDOME TEXT!
+SIMPLE NODE PROGRAM THAT GENERATES RANDOM TEXT!
 
 
 1) download file.
