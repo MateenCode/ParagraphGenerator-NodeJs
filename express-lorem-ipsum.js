@@ -4,23 +4,24 @@ const app = express();
 var loremIpsum = require('lorem-ipsum')
 
 
-, output     = loremIpsum({
 
-  count: 3
-  ,units: 'paragraphs'
-  ,suffix: '<br / >'
+
+
+
+
+app.get('/lorem/:count', function (req, res) {
+
+  var output = loremIpsum({
+
+    count: req.params.count,
+    units: 'paragraphs',
+    suffix: '<br / >'
+
+  });
+
+  res.send(output)
 
 });
-
-
-app.get('/lorem', function (req, res) {
-
-    res.send(output);
-
-
-});
-
-
 
 
 
